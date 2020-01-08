@@ -1,10 +1,11 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+<%@ page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" language="java" %>
 <%@ page session="false" %>
 
 <html lang="en">
 
   <head>
-    <title>Noxen &mdash; Website Template by Colorlib</title>
+    <title> JM HOME PAGE &mdash;</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
@@ -45,16 +46,16 @@
         <div class="container mb-3">
           <div class="d-flex align-items-center">
             <div class="site-logo mr-auto">
-              <a href="/projects.do">Noxen<span class="text-primary">.</span></a>
+              <a href="/projects.do">JM<span class="text-primary">.</span></a>
             </div>
             <div class="site-quick-contact d-none d-lg-flex ml-auto ">
               <div class="d-flex site-info align-items-center mr-5">
                 <span class="block-icon mr-3"><span class="icon-map-marker"></span></span>
-                <span>34 Street Name, City Name Here, <br> United States</span>
+                <span>  서울특별시  <br> 서초구 우면동 </span>
               </div>
               <div class="d-flex site-info align-items-center">
                 <span class="block-icon mr-3"><span class="icon-clock-o"></span></span>
-                <span>Sunday - Friday 8:00AM - 4:00PM <br> Saturday CLOSED</span>
+                <div id="divClock" class="clock"></div>
               </div>
               
             </div>
@@ -70,12 +71,12 @@
 
               <nav class="site-navigation text-left mr-auto d-none d-lg-block" role="navigation">
                 <ul class="site-menu main-menu js-clone-nav mr-auto ">
-                  <li class="active"><a href="index.html" class="nav-link">Home</a></li>
-                  <li><a href="services.html" class="nav-link">Services</a></li>
-                  <li><a href="projects.html" class="nav-link">Projects</a></li>
-                  <li><a href="about.html" class="nav-link">About</a></li>
-                  <li><a href="blog.html" class="nav-link">Blog</a></li>
-                  <li><a href="contact.html" class="nav-link">Contact</a></li>
+                  <li class="active"><a href="index.do" class="nav-link">Home</a></li>
+                  <li><a href="services.do" class="nav-link">게시판</a></li>
+                  <li><a href="projects.do" class="nav-link">Projects</a></li>
+                  <li><a href="about.do" class="nav-link">About</a></li>
+                  <li><a href="blog.do" class="nav-link">Blog</a></li>
+                  <li><a href="contact.do" class="nav-link">Contact</a></li>
                 </ul>
               </nav>
 
@@ -96,8 +97,8 @@
         <div class="container">
           <div class="row align-items-center ">
             <div class="col-md-5 mt-5 pt-5">
-              <h1 class="mb-3">Digital Agency with Excellent Services.</h1>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta veritatis in tenetur doloremque, maiores doloribus officia iste. Dolores.</p>
+              <h1 class="mb-3"> 안녕하세요 </h1>
+              <p> main 페이지 입니다. 위에 버튼을 통해 해당 위치로 이동하시면 됩니다.</p>
               <p class="mt-5"><a href="#" class="btn btn-primary">About Us</a></p>
             </div>
             <div class="col-md-6 ml-auto">
@@ -110,434 +111,6 @@
         </div>
       </div>
     </div>
-    
-    <div class="site-section">
-      <div class="container">
-        <div class="row justify-content-center text-center">
-          <div class="col-md-7 mb-5">
-            <h5 class="subtitle">Features</h5>
-            <h2>A creative digital agency with excellence services</h2>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-6 col-lg-4 mb-4 mb-lg-0">
-            <div class="feature-1">
-              <span class="wrap-icon">
-                <span class="icon-home"></span>
-              </span>
-              <h3>Recusandae Cumque</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas ullam, cumque a debitis reiciendis dolorum ad minus error.</p>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-4 mb-4 mb-lg-0">
-            <div class="feature-1">
-              <span class="wrap-icon">
-                <span class="icon-face"></span>
-              </span>
-              <h3>Voluptas Ullam</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas ullam, cumque a debitis reiciendis dolorum ad minus error.</p>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-4 mb-4 mb-lg-0">
-            <div class="feature-1">
-              <span class="wrap-icon">
-                <span class="icon-drafts"></span>
-              </span>
-              <h3>Reiciendis Dolorum Minu</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas ullam, cumque a debitis reiciendis dolorum ad minus error.</p>
-            </div>
-          </div>
-        </div>
-        <div class="row mt-5">
-          <div class="col-lg-12 text-center">
-            <a href="#" class="btn btn-primary">View All Services</a>
-          </div>
-        </div>
-      </div>
-    </div>
-
-
-
-
-    <div class="site-section bg-light">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-5">
-            <h2 class="h5 mb-4">Your digital partner starts here.</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente reprehenderit aspernatur, reiciendis explicabo doloribus aperiam sed sequi, aut repudiandae magni nobis voluptatem!</p>
-
-            <div class="d-flex align-items-center">
-              <span class="sign mr-4">
-                <img src="./resources/images/signature.svg" alt="" class="img-fluid">
-              </span>
-              <div>
-                <span class="d-block font-weight-bold">Mr. John Doe</span>
-                <span>CEO &amp; Co-Founder </span>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 ml-auto">
-            <h2 class="h5 mb-4">Our expertise and skills</h2>
-
-            <div class="progress-wrap mb-4">
-              <div class="d-flex">
-                <span>Writing</span>
-                <span class="ml-auto">55%</span>
-              </div>
-              <div class="progress rounded-0" style="height: 7px;">
-                <div class="progress-bar" role="progressbar" style="width: 55%;" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-
-            <div class="progress-wrap mb-4">
-              <div class="d-flex">
-                <span>WordPress</span>
-                <span class="ml-auto">85%</span>
-              </div>
-              <div class="progress rounded-0" style="height: 7px;">
-                <div class="progress-bar" role="progressbar" style="width: 85%;" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-
-            <div class="progress-wrap mb-4">
-              <div class="d-flex">
-                <span>Bootstrap</span>
-                <span class="ml-auto">93%</span>
-              </div>
-              <div class="progress rounded-0" style="height: 7px;">
-                <div class="progress-bar" role="progressbar" style="width: 93%;" aria-valuenow="93" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-
-            <div class="progress-wrap mb-4">
-              <div class="d-flex">
-                <span>jQuery</span>
-                <span class="ml-auto">83%</span>
-              </div>
-              <div class="progress rounded-0" style="height: 7px;">
-                <div class="progress-bar" role="progressbar" style="width: 83%;" aria-valuenow="83" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="site-section section-3" data-stellar-background-ratio="0.5" style="background-image: url('./resources/images/hero_2.jpg');">
-      <div class="container">
-        <div class="row justify-content-center text-center">
-          <div class="col-7 text-center mb-5">
-            <p class="lead text-white">Suscipit libero voluptate</p>
-            <h2 class="text-white">Get ready to start your exciting journey. Our agency</h2>
-          </div>
-        </div>
-        
-      </div>
-    </div>
-
-    <div class="site-section counter-wrap">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-6 col-lg-4 mb-5">
-            <div class="d-flex align-items-center counter">
-              <span class="icon-building-o wrap-icon mr-3"></span>
-              <div class="text">
-                <span class="d-block number">14k</span>
-                <span class="caption">number of firms</span>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-4 mb-5">
-            <div class="d-flex align-items-center counter">
-              <span class="icon-home2 wrap-icon mr-3"></span>
-              <div class="text">
-                <span class="d-block number">2k</span>
-                <span class="caption">in house crews</span>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-4 mb-5">
-            <div class="d-flex align-items-center counter">
-              <span class="icon-code wrap-icon mr-3"></span>
-              <div class="text">
-                <span class="d-block number">3920k</span>
-                <span class="caption">line of codes</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-
-
-    <div class="site-section bg-light">
-      <div class="container">
-        <div class="row justify-content-center  mb-5">
-          <div class="col-md-7 text-center">
-            <h3 class="section-heading text-center">News &amp; Events</h3>
-            <p class="mb-5 lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure nesciunt nemo vel earum maxime neque!</p>
-
-          </div>
-
-        </div>
-        <div class="row">
-          <div class="col-12">
-
-            <div class="nonloop-block-13 owl-carousel">
-              <div class="news-1" style="background-image: url('./resources/images/img_1.jpg');">
-                <div class="text">
-                  <h3><a href="#">Consectetur adipisicing elit</a></h3>
-                  <span class="category d-block mb-3">Web Development</span>
-                  <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                  <a href="#" class="d-block arrow-wrap"><span class="icon-arrow_forward"></span></a>
-                </div>
-              </div>
-
-              <div class="news-1" style="background-image: url('./resources/images/img_2.jpg');">
-                <div class="text">
-                  <h3><a href="#">Consectetur adipisicing elit</a></h3>
-                  <span class="category d-block mb-3">Web Development</span>
-                  <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                  <a href="#" class="d-block arrow-wrap"><span class="icon-arrow_forward"></span></a>
-                </div>
-              </div>
-
-              <div class="news-1" style="background-image: url('./resources/images/img_3.jpg');">
-                <div class="text">
-                  <h3><a href="#">Consectetur adipisicing elit</a></h3>
-                  <span class="category d-block mb-3">Web Development</span>
-                  <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                  <a href="#" class="d-block arrow-wrap"><span class="icon-arrow_forward"></span></a>
-                </div>
-              </div>
-
-              <div class="news-1" style="background-image: url('images/img_3.jpg');">
-                <div class="text">
-                  <h3><a href="#">Consectetur adipisicing elit</a></h3>
-                  <span class="category d-block mb-3">Web Development</span>
-                  <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                  <a href="#" class="d-block arrow-wrap"><span class="icon-arrow_forward"></span></a>
-                </div>
-              </div>
-            </div>
-            
-          </div>
-        </div>
-      </div>
-    </div>
-
-
-    
-
-    <div class="site-section section-3" data-stellar-background-ratio="0.5" style="background-image: url('images/hero_2.jpg');">
-      <div class="container">
-        <div class="row justify-content-center text-center">
-          <div class="col-7 text-center mb-5">
-            <h2 class="text-white section-heading primary-color-icon text-center">More Services</h2>
-            <p class="lead text-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam quo doloribus, suscipit libero, voluptate aliquam.</p>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-lg-4 col-md-6 mb-4">
-            <div class="service-1">
-              <span class="service-1-icon">
-                <span class="icon-attach_money"></span>
-              </span>
-              <div class="service-1-contents">
-                <h3>Consectetur Adipisicing Elit</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati, laboriosam.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6 mb-4">
-            <div class="service-1">
-              <span class="service-1-icon">
-                <span class="icon-build"></span>
-              </span>
-              <div class="service-1-contents">
-                <h3>Obcaecati Laboriosam</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati, laboriosam.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6 mb-4">
-            <div class="service-1">
-              <span class="service-1-icon">
-                <span class="icon-photo_camera"></span>
-              </span>
-              <div class="service-1-contents">
-                <h3>Nostrum Suscipit Nobis</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati, laboriosam.</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 mb-4">
-            <div class="service-1">
-              <span class="service-1-icon">
-                <span class="icon-redeem"></span>
-              </span>
-              <div class="service-1-contents">
-                <h3>Harum Molestiae Optio</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati, laboriosam.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6 mb-4">
-            <div class="service-1">
-              <span class="service-1-icon">
-                <span class="icon-phonelink"></span>
-              </span>
-              <div class="service-1-contents">
-                <h3>Nostrum Suscipit Nobis</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati, laboriosam.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6 mb-4">
-            <div class="service-1">
-              <span class="service-1-icon">
-                <span class="icon-child_friendly"></span>
-              </span>
-              <div class="service-1-contents">
-                <h3>Eaque Odit Molestias</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati, laboriosam.</p>
-              </div>
-            </div>
-          </div>
-
-        </div>
-      </div>
-    </div>
-
-
-    
-    
-    <div class="site-section bg-light">
-      <div class="container">
-        <div class="row justify-content-center text-center mb-5">
-          <div class="col-7 text-center mb-5">
-            <h2 class="section-heading text-center">Our Top Client Says</h2>
-            <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo assumenda, dolorum necessitatibus eius earum voluptates sed!</p>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-lg-4 mb-4 mb-lg-0">
-            <div class="testimonial-2 text-center">
-              <div class="v-card mb-4 text-center">
-                <img src="images/person_1.jpg" alt="Image" class="img-fluid mx-auto d-block">
-                <span>Mike Fisher</span>
-              </div>
-              <blockquote>
-                <p>"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem, deserunt eveniet veniam. Ipsam, nam, voluptatum"</p>
-              </blockquote>
-              
-            </div>
-          </div>
-          <div class="col-lg-4 mb-4 mb-lg-0">
-            <div class="testimonial-2 text-center">
-              <div class="v-card mb-4 text-center">
-                <img src="images/person_2.jpg" alt="Image" class="img-fluid mx-auto d-block">
-                <span>Jean Stanley</span>
-              </div>
-              <blockquote>
-                <p>"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem, deserunt eveniet veniam. Ipsam, nam, voluptatum"</p>
-              </blockquote>
-              
-            </div>
-          </div>
-          <div class="col-lg-4 mb-4 mb-lg-0">
-            <div class="testimonial-2 text-center">
-              <div class="v-card mb-4 text-center">
-                <img src="images/person_3.jpg" alt="Image" class="img-fluid mx-auto d-block">
-                <span>Katie Rose</span>
-              </div>
-              <blockquote>
-                <p>"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem, deserunt eveniet veniam. Ipsam, nam, voluptatum"</p>
-              </blockquote>
-              
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="site-section section-3" data-stellar-background-ratio="0.5" style="background-image: url('images/hero_1.jpg');">
-      <div class="container">
-        <div class="row justify-content-center text-center">
-          <div class="col-7 text-center mb-5">
-            <h2 class="text-white section-heading primary-color-icon text-center">Quality Services</h2>
-            <p class="lead text-white mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam quo doloribus, suscipit libero, voluptate aliquam.</p>
-            <p><a href="#" class="btn btn-primary">Contact Us Now</a></p>
-          </div>
-        </div>
-      </div>
-    </div>
-
-
-    <div class="site-section bg-white">
-      <div class="container">
-        <div class="row justify-content-center text-center mb-5">
-          <div class="col-7 text-center mb-5">
-            <h2 class="section-heading text-center">Our Blog</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo assumenda, dolorum necessitatibus eius earum voluptates sed!</p>
-          </div>
-        </div>
-
-        <div class="row">
-          <div class="col-lg-4 col-md-6 mb-4">
-            <div class="post-entry-1 h-100">
-              <a href="single.html">
-                <img src="images/img_1.jpg" alt="Image"
-                 class="img-fluid">
-              </a>
-              <div class="post-entry-1-contents">
-                
-                <h2><a href="single.html">Lorem ipsum dolor sit amet</a></h2>
-                <span class="meta d-inline-block mb-3">July 17, 2019 <span class="mx-2">by</span> <a href="#">Admin</a></span>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores eos soluta, dolore harum molestias consectetur.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6 mb-4">
-            <div class="post-entry-1 h-100">
-              <a href="single.html">
-                <img src="images/img_2.jpg" alt="Image"
-                 class="img-fluid">
-              </a>
-              <div class="post-entry-1-contents">
-                
-                <h2><a href="single.html">Lorem ipsum dolor sit amet</a></h2>
-                <span class="meta d-inline-block mb-3">July 17, 2019 <span class="mx-2">by</span> <a href="#">Admin</a></span>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores eos soluta, dolore harum molestias consectetur.</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 mb-4">
-            <div class="post-entry-1 h-100">
-              <a href="single.html">
-                <img src="images/img_3.jpg" alt="Image"
-                 class="img-fluid">
-              </a>
-              <div class="post-entry-1-contents">
-                
-                <h2><a href="single.html">Lorem ipsum dolor sit amet</a></h2>
-                <span class="meta d-inline-block mb-3">July 17, 2019 <span class="mx-2">by</span> <a href="#">Admin</a></span>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores eos soluta, dolore harum molestias consectetur.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-
-    
-
-    
 
     <footer class="site-footer">
       <div class="container">
@@ -594,6 +167,7 @@
 
         </div>
       </div>
+      
     </footer>
 
     </div>
@@ -611,7 +185,7 @@
     <script src="./resources/js/jquery.easing.1.3.js"></script>
     <script src="./resources/js/bootstrap-datepicker.min.js"></script>
     <script src="./resources/js/aos.js"></script>
-
+ 	<script src="./resources/js/showClock.js"></script>
     <script src="./resources/js/main.js"></script>
 
   </body>

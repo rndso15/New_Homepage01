@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mapper namespace = "sql">
+	
+	<select id = "selectDisposableTable" resultType ="java.lang.String">
+		select * 
+		from disposable_table
+	</select>
+	
+</mapper>

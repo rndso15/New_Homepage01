@@ -1,70 +1,66 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<web-app version="2.5" xmlns="http://java.sun.com/xml/ns/javaee"
-	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee https://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
-
-	<welcome-file-list>
-   		 <welcome-file>index.do</welcome-file>
-  	</welcome-file-list>
-  	
-  	<filter>
-    	<filter-name>encodingFilter</filter-name>
-    	<filter-class>org.springframework.web.filter.CharacterEncodingFilter</filter-class>
-    	<init-param>
-     	 <param-name>encoding</param-name>
-      	<param-value>UTF-8</param-value>
-   		 </init-param>
-  	</filter>
- 	<filter-mapping>
-   	 <filter-name>encodingFilter</filter-name>
-   	 <url-pattern>/*</url-pattern>
- 	</filter-mapping>
- 	
-	<!-- root 컨텍스트 파일위치. -->
-	<context-param>
-		<param-name>contextConfigLocation</param-name>
-		<param-value>/WEB-INF/config/context-*.xml</param-value>
-	</context-param>
-	
-	<!-- 리스너 선언. -->
-	<listener>
-		<listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
-	</listener>
-
-	<!-- 서블릿 디스패처. -->
-	<servlet>
-  	<servlet-name>action</servlet-name>
-  	<servlet-class>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee https://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" version="2.5">
+  <welcome-file-list>
+    <welcome-file>index.do</welcome-file>
+  </welcome-file-list>
+  <filter>
+    <filter-name>encodingFilter</filter-name>
+    <filter-class>org.springframework.web.filter.CharacterEncodingFilter</filter-class>
+    <init-param>
+      <param-name>encoding</param-name>
+      <param-value>UTF-8</param-value>
+    </init-param>
+  </filter>
+  <filter-mapping>
+    <filter-name>encodingFilter</filter-name>
+    <url-pattern>/*</url-pattern>
+  </filter-mapping>
+  
+  <context-param>
+    <param-name>contextConfigLocation</param-name>
+    <param-value>/WEB-INF/config/context-*.xml</param-value>
+  </context-param>
+  
+  <listener>
+    <listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
+  </listener>
+  
+  <servlet>
+    <servlet-name>action</servlet-name>
+    <servlet-class>
   		org.springframework.web.servlet.DispatcherServlet
   	</servlet-class>
-  	<init-param>
-  		<param-name>contextConfigLocation</param-name>
-  		<param-value>
+    <init-param>
+      <param-name>contextConfigLocation</param-name>
+      <param-value>
   			/WEB-INF/config/*-servlet.xml
   		</param-value>
-  	</init-param>
-  	<load-on-startup>1</load-on-startup>
+    </init-param>
+    <load-on-startup>1</load-on-startup>
   </servlet>
-  
   <servlet-mapping>
     <servlet-name>action</servlet-name>
     <url-pattern>*.do</url-pattern>
   </servlet-mapping>
   
-  	<!--  
-	<servlet>
-		<servlet-name>appServlet</servlet-name>
-		<servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
-		<init-param>
-			<param-name>contextConfigLocation</param-name>
-			<param-value>/WEB-INF/spring/appServlet/servlet-context.xml</param-value>
-		</init-param>
-		<load-on-startup>1</load-on-startup>
-	</servlet>
-		
-	<servlet-mapping>
-		<servlet-name>appServlet</servlet-name>
-		<url-pattern>/</url-pattern>
-	</servlet-mapping>
-	-->
+  <servlet>
+    <description></description>
+    <display-name>SampleController</display-name>
+    <servlet-name>SampleController</servlet-name>
+    <servlet-class>com.mypage.sample.controller.SampleController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>SampleController</servlet-name>
+    <url-pattern>/SampleController</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>SampleDaoImpl</display-name>
+    <servlet-name>SampleDaoImpl</servlet-name>
+    <servlet-class>com.mypage.sample.dao.SampleDaoImpl</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>SampleDaoImpl</servlet-name>
+    <url-pattern>/SampleDaoImpl</url-pattern>
+  </servlet-mapping>
 </web-app>
