@@ -72,7 +72,7 @@
               <nav class="site-navigation text-left mr-auto d-none d-lg-block" role="navigation">
                 <ul class="site-menu main-menu js-clone-nav mr-auto ">
                   <li class="active"><a href="index.do" class="nav-link">Home</a></li>
-                  <li><a href="services.do" class="nav-link">게시판</a></li>
+                  <li><a href="home.do" class="nav-link">게시판</a></li>
                   <li><a href="projects.do" class="nav-link">Projects</a></li>
                   <li><a href="about.do" class="nav-link">About</a></li>
                   <li><a href="blog.do" class="nav-link">Blog</a></li>
