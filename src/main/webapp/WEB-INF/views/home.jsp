@@ -12,8 +12,13 @@
 </h1>
 
 <P> "처음 만든 버튼을 누르셨습니다.</P>
-<P> DB 조회 결과 : ${sampleAttribute}</P>
+<P> DB 조회 결과 : ${sampleAttribute} </P>
 
+	<div>
+        <form action="/sample.bgn" method="post">
+            <button onclick="submit">처음 만든 버튼</button>
+        </form>
+    </div>
 
 </body>
 </html>

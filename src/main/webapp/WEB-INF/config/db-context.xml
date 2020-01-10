@@ -16,7 +16,7 @@
 	<!-- mapper 밑에 있는 sql.xml 과 연결하게 된다. -->
 	<bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
         <property name="dataSource" ref="dataSource" />
-        <property name="mapperLocations" value="classpath:/mapper///*_sql.xml"/>
+        <property name="mapperLocations" value="classpath:/mapper/**/*_sql.xml"/>
     </bean>
  
  	<!-- 3. sql 세선 빈을 factory 에서 가져옴. -->

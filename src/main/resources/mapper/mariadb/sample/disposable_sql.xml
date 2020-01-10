@@ -5,8 +5,8 @@
 <mapper namespace = "sql">
 	
 	<select id = "selectDisposableTable" resultType ="java.lang.String">
-		select * 
-		from disposable_table
+		SELECT * 
+		FROM disposable_table
 	</select>
 	
 </mapper>
