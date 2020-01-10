@@ -9,4 +9,10 @@
 		FROM disposable_table
 	</select>
 	
+	
+	<select id = "selectlistTable" resultType ="com.mypage.bean.Site_Member">
+		SELECT * 
+		FROM Site_Member
+	</select>
+	
 </mapper>
